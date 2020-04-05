@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p id="demo"></p>
+      <p id="demo2"></p>
+      <script>
+        var txt="";
+        var son=[2,3,5,9,8,6];
+        var son2=son.map(my1);
+        document.getElementById('demo2').innerHTML=son2;
+        son.forEach(my);
+
+        document.getElementById('demo').innerHTML=txt;
+        function my(value, index,array){
+          txt=txt+value+"<br>";
+        }
+        function my1(volue,index,array){
+          return volue*2;
+        }
+
+      </script>
+  </body>
+</html>

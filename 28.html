@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <p id="demo"></p>
+      <script>
+        var point=[2,32,5,91,1,10,8,100];
+        document.getElementById("demo").innerHTML=my(point);
+        function my(arr){
+          return Math.min.apply(null, arr);
+        }
+    </script>
+
+  </body>
+</html>

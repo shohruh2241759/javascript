@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="document.getElementById('demo').innerHTML=my(0,10)">0 dan 10 gacha</button>
+    <button onclick="document.getElementById('demo1').innerHTML=my1(5,10)">5 dan 10 gacha</button>
+    <p id="demo"></p>
+    <p id='demo1'></p>
+    <script>
+      function my(max,min){
+          return Math.floor(Math.random()*(max-min))+min;
+      }
+      function my1(max, min){
+        return Math.floor(Math.random()*(max-min+1))+min;
+      }
+    </script>
+  </body>
+</html>

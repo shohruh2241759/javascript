@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <body>
+   <button type="button" onclick="my2()" name="button">number</button>
+   <button type="button" onclick="my()" name="button">nosort</button>
+   <p id="demo3"></p>
+
+<script>
+
+   var point=[2,3,5,10,1,100,8];
+   document.getElementById("demo3").innerHTML=point;
+      function my2(){
+        point.sort(function(a,b){return a-b});
+     document.getElementById("demo3").innerHTML=point;
+   }
+   function my(){
+     point.sort(function(a,b){return b-a});
+     document.getElementById("demo3").innerHTML=point;
+   }
+ </script>
+  </body>
+</html>

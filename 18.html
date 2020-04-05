@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p id="demo"></p>
+      <p id="demo1"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+      <script>
+        var car=new Array("nexia", "matiz", "damaz");
+        car[0]="jiguli";
+        var du=car[0];
+        var person={name:"Shohruh", surname:"Matchonov", age:25};
+        var len=car.length;
+        var num=car[car.length-1];
+        document.getElementById("demo3").innerHTML=num;
+        document.getElementById("demo").innerHTML=du;
+        document.getElementById("demo2").innerHTML=len;
+        document.getElementById("demo1").innerHTML=person.name+" "+person.surname;
+      </script>
+  </body>
+</html>

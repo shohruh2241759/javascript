@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html
   <body>
+      <button type="button" onclick="my1()" name="button">frukt</button>
       <button type="button" onclick="my()" name="button">qo`sh</button>
+      <button type="button" onclick="my2()" name="button">poliz</button>
       <p id="demo"></p>
       <p id="demo1"></p>
+      <p id="demo2"></p>
       <script>
+        var poliz=["tarvuz", "qovun", "karam"];
         var car=["nexia","epika","gentra"];
         document.getElementById("demo").innerHTML=car;
         function my(){
@@ -13,7 +17,22 @@
         }
         var fruct=["apple","limon","banan"];
         document.getElementById("demo1").innerHTML=fruct;
-        
+        function my1(){
+          fruct[fruct.length]="tiko";
+          document.getElementById("demo1").innerHTML=fruct;
+            }
+            document.getElementById("demo2").innerHTML=poliz;
+            function my2(){
+            poliz[5]="mandarin";
+            var limon="<br>"
+            for (var i = 0; i < poliz.length; i++) {
+              limon+=poliz[i]+"<br>"
+                document.getElementById("demo2").innerHTML=limon;
+            }
+
+
+          }
+
       </script>
   </body>
 </html>

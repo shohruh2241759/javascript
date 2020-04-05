@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <p id="demo10"></p>
+    <button type="button" onclick="my()" name="button">sort</button>
+    <button type="button" onclick="my1()" name="button">reverse sort</button>
+    <button type="button" onclick="my2()" name="button">number</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+        <script>
+            var car=["nexia","damas","tiko"];
+            var point=[2,3,5,9,1,0,8];
+            document.getElementById("demo").innerHTML=car;
+            document.getElementById("demo10").innerHTML=point;
+
+            function my(){
+              car.sort();
+              document.getElementById("demo1").innerHTML=car;
+            }
+            function my1(){
+                car.reverse();
+              document.getElementById("demo2").innerHTML=car;
+                        }
+            function my2(){
+              point.sort();
+              document.getElementById("demo3").innerHTML=point;
+
+            }
+        </script>
+  </body>
+  </html>

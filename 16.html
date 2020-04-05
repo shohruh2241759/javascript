@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="nemo"></p>
+  <p id="demo"></p>
+  <script>
+    var t="L,O,l,a,q,u,r,b,o,n,o,v,a";
+    var q=t.toLowerCase();
+    var r=q.split(",");
+    var i;
+    var text="";
+    document.getElementById("nemo").innerHTML=r[5];
+    for(i=0; i<r.length; i++){
+      text=text+r[i]+"<br>"
+    }
+    document.getElementById("demo").innerHTML=text  ;
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+var x=y.slice(7);
+var x=y.substring(7,13); {substr}
+var x=y.replace("nom","isim");
+var x=y.replace(/nom/i,"isim");
+ var x=y.replace(/nom/g,"isim");
+ var t3=t1.concat(" "+t2);
+var t5=t4.toLowerCase();
+var t6=t1.toUpperCase();
+alert(t6.trim());
+var t8=t2.charAt(2);
+var t9=t2[0];
+var t1=t4.split("");
+var a=x.toFixed(2); 	
+var e=x.toPrecision(2);
+var c=Number.MAX_VALUE;
+var u=Number.MIN_VALUE;
+
+car.forEach(my);
+function my(value){ text+="<li>"+value+"</li>"; 
+	}
+
+car.join("*");
+car.pop();
+car.shift();
+fru.unshift("apelsin");
+car.splice(1,2,"damas","tiko");
+car.splice(0,1);
+var sitrus=fru.slice(1,6);     
+car.sort();
+car.reverse();
+car.sort();
+car.reverse();
+
+point.sort(function(a,b){return a-b});
+
+point.sort(function(a,b){return b-a});
+
+Math.max.apply(null, point);
+
+son2=son.map(my1);
+son.forEach(my);
+sort1=son.filter(my);

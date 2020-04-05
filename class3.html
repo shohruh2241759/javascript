@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p id="demo"></p>
+      <script>
+        class Car{
+          constructor(dam){
+            this.carname=dam;
+          }
+          static hello(){
+            return "hello!";
+          }
+        }
+        nom=new Car("Nexia");
+        document.getElementById("demo").innerHTML=Car.hello();
+      </script>
+  </body>
+</html>

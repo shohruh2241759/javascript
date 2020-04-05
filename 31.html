@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p id="demo"></p>
+      <p id="demo1"></p>
+      <script>
+        var son=[5,6,9,74,8,45];
+        sort1=son.filter(my);
+        sum=son.reduce(my1);
+        document.getElementById("demo1").innerHTML=sum;
+        document.getElementById("demo").innerHTML=sort1;
+        function my(value, index, array){
+          return value>15;
+        }
+        function my1(t,value,index,array){
+          return t+value;
+        }
+      </script>
+  </body>
+</html>

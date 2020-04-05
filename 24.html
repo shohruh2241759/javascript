@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <button type="button" onclick="my()" name="button">try it</button>
+      <p id="demo"></p>
+      <script>
+
+      var car=["nexia","damas","tiko"];
+      var fru=["apple","banan","limon"];
+        document.getElementById("demo").innerHTML=car;
+        car.splice(1,2,"malibu","cobolt");
+        function my(){
+          car.splice(1,0,"malibu","cobolt");
+          document.getElementById("demo").innerHTML=car;
+        }
+      </script>
+  </body>
+</html>

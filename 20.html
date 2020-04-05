@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p id="demo"></p>
+      <script>
+        var car=["malibu","nexia","damas","tiko"];
+        var text="<ul>";
+          car.forEach(my);
+          text+="</ul>";
+            document.getElementById("demo").innerHTML=text;
+            function my(value){
+              text+="<li>"+value+"</li>";
+            }
+      </script>
+  </body>
+</html>

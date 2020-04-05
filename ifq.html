@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="my()">day</button>
+    <p id="demo">Good Evening</p>
+      <script>
+        function my(){
+        if(new Date().getHours()<14 ){
+          document.getElementById("demo").innerHTML="Good day";
+        }
+      }
+      </script>
+  </body>
+</html>

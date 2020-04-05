@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p id="demo"></p>
+      <script>
+        var day=new Date().getDay();
+        var kun;
+        switch(day){
+          case 0:
+          kun="Yakshanba";
+          break;
+          case 1:
+          kun="Dushanba";
+          break;
+          case 2:
+          kun="Seshanba";
+          break;
+          case 3:
+          kun="Chorshanba";
+          break;
+          case 4:
+          kun="Payshanba";
+          break;
+          case 5:
+          kun="Juma";
+          break;
+          case 6:
+          kun="Shanba";
+          break;
+        }
+        document.getElementById("demo").innerHTML="bugun "+kun;
+      </script>
+  </body>
+</html>

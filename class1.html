@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p id="demo"></p>
+      <script>
+
+      class Car{
+        constructor(brand){
+          this.carname=brand;
+        }
+          undo() {
+          return "i fave a"+this.carname;
+        }
+        }
+        mycar=new Car("Nexia");
+        document.getElementById("demo").innerHTML=mycar.undo();
+      </script>
+  </body>
+</html>

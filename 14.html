@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>sefdrgdgzfxzsa</p>
+    <button onclick="myfunction()">CVlick</button>
+    <p id="demo">Mening ismim Shohruh Matchonov Matchonov</p>
+    <p id="demo1">Mening ismim Shohruh Matchonov Matchonov</p>
+
+    <script>
+      function myfunction(){
+      var str=document.getElementById("demo").innerHTML;
+      var txt=str.replace(/Matchonov/g,"Matkarim o\'g\'li");//hammasini o`zgarturadu
+      var txt1=str.replace(/Matchonov/i,"Matkarim o\'g\'li"); //chaptan birinchini o`zgartiradi agar yana bir bosilsa ikkinchisini o`zgaritradi
+      document.getElementById("demo").innerHTML=txt;
+      document.getElementById("demo1").innerHTML=txt1;
+
+    }
+    </script>
+  </body>
+</html>

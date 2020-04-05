@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button type="button" onclick="my()" name="button">qush</button>
+      <p id="demo"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+      <p id="demo4"></p>
+      <p id="demo5"></p>
+      <p id="demo6"></p>
+      <p id="demo7"></p>
+
+      <script>
+        var car=["nexia","damas","tiko"];
+        var fru=["banan","apple","limon"];
+        document.getElementById("demo").innerHTML=car;
+        y=car.shift();
+        document.getElementById("demo4").innerHTML=y;
+        car.shift();
+
+        document.getElementById("demo2").innerHTML=car;
+        var x=car.shift();
+        document.getElementById("demo3").innerHTML=x;
+        document.getElementById("demo5").innerHTML=fru;
+        document.getElementById("demo6").innerHTML=fru.unshift("kivi");
+        document.getElementById("demo7").innerHTML=fru;
+
+
+        function my(){
+          fru.unshift("apelsin");
+          document.getElementById("demo5").innerHTML=fru;
+        }
+
+
+
+      </script>
+  </body>
+</html>

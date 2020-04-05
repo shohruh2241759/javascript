@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+      <script>
+
+      var car=["nexia","damas","tiko"];
+      var fru=["apple","banan","limon"];
+      var size=["big","thin","large"];
+      var child=car.concat(fru);
+      var form=car.concat(fru,size);
+
+      document.getElementById("demo1").innerHTML=child;
+      document.getElementById("demo").innerHTML=form;
+      document.getElementById("demo2").innerHTML=form.concat(["i","you","he"]);
+      var sitrus=fru.slice(1,6);
+      document.getElementById("demo3").innerHTML=sitrus;
+      </script>
+  </body>
+</html>

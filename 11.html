@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p id ="demo"></p>
+      <script>
+        var son={
+          name:"Shohruh",
+          surname:"Matchonov",
+          middlename:"Matkarim o`g`li",
+          fulname:function(){
+          return this.name+" "+this.surname;
+          }
+        };
+          document.getElementById("demo").innerHTML=son.fulname();
+      </script>
+  </body>
+</html>

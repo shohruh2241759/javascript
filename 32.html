@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+      <script>
+        var son=[45, 4, 9, 16, 25];
+        var fru=["apple", "banan", "nok", "mango","nashvati","nok"];
+        var son1=son.some(my);
+        var r=fru.lastIndexOf("nok");
+        var t=fru.indexOf("nok");
+        document.getElementById("demo1").innerHTML="nokni sindexi="+t;
+        document.getElementById("demo2").innerHTML="nok lastindex="+r;
+        document.getElementById("demo").innerHTML="18 dan kattasi="+son1;
+        function my(value, index, array){
+          return value > 18;
+        }
+      </script>
+  </body>
+</html>

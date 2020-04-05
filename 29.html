@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button type="button" onclick="my()" name="button">sort</button>
+      <p id="demo"></p>
+      <script>
+        var car=[
+        {type:"damas",year:2002},
+        {type:"tiko",year:2000},
+        {type:"nexia",year:2001}
+        ];
+        displayCar();
+        function my(){
+          car.sort(function(a,b){return a.year-b.year});
+          displayCar();
+        }
+        function displayCar(){
+          document.getElementById("demo").innerHTML=
+          car[0].type+" "+car[0].year+"<br>"+
+          car[1].type+" "+car[1].year+"<br>"+
+          car[2].type+" "+car[2].year;
+        }
+      </script>
+  </body>
+</html>

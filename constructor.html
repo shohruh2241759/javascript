@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p id="demo"></p>
+      <p id="demo1"></p>
+      <script>
+        var car=["malibu","damas","epika"];
+        var d=new Date().getHours();
+        document.getElementById("demo1").innerHTML=my1(new Date());
+        function my1(sana){
+          return sana.constructor===Date;
+        }
+
+        document.getElementById("demo").innerHTML=my(car);
+        function my(son){
+          return son.constructor===Array;
+        }
+      </script>
+  </body>
+</html>
